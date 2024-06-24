@@ -50,9 +50,9 @@ export function InputWithButton({ control, handleSubmit, onSubmit, fileToGenerat
         <PaperPlaneIcon />
       </Button>
 
-      {loading && (
-        <div className="absolute top-[-30px] left-0 w-full flex items-center justify-center">
-          <div className="flex items-center space-x-2">
+      {!loading && (
+        <div className="absolute top-[-50px] left-0 w-full flex items-center justify-center ">
+          <div className="flex items-center space-x-2 bg-white border rounded-full p-2 text-sm">
             <span>Generating</span>
             <ReloadIcon className="mr-2 h-4 w-4 animate-spin" />
           </div>
