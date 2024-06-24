@@ -7,7 +7,7 @@ export function Bubble({ className, cardClassName, text, time, isPerson, imageSr
     <div className={`${className} pb-3`}>
       <Card className={`${cardClassName}`}>
         <CardContent>
-          <div className={`text-base ${isPerson ? 'text-end' : 'text-start'} w-full overflow-hidden`}>
+          <div className={'text-base text-start w-full overflow-hidden'}>
             {imageSrc && (
               <div className="mb-4">
                 <img
